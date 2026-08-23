@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Versículo</title>
+  <meta name="description" content="Meu Versículo — receba diariamente um versículo da Bíblia selecionado para você.">
+  <style>
+    :root {
+      --fundo: #ffffff;
+      --texto: #111111;
+      --texto-suave: #3a3a3c;
+      --acento: #AF26C9;
+      --hairline: rgba(0, 0, 0, 0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #101014;
+        --texto: #f2f2f7;
+        --texto-suave: #b9b9c0;
+        --acento: #d36ae6;
+        --hairline: rgba(255, 255, 255, 0.16);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--fundo);
+      color: var(--texto);
+      font-family: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 10px; }
+    .subtitulo {
+      color: var(--texto-suave);
+      max-width: 420px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .botao {
+      display: inline-block;
+      background: var(--acento);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 14px;
+      margin-bottom: 40px;
+    }
+    nav { color: var(--texto-suave); font-size: 0.9rem; }
+    nav a { color: var(--texto-suave); }
+  </style>
+</head>
+<body>
+  <h1>Meu Versículo</h1>
+  <p class="subtitulo">Receba diariamente um versículo da Bíblia selecionado
+  especialmente para você — com reflexões, orações e imagens para
+  compartilhar.</p>
+  <a class="botao" href="https://apps.apple.com/br/app/meu-vers%C3%ADculo/id1667175912" rel="noopener">Baixar na App Store</a>
+  <nav><a href="privacidade.html">Política de Privacidade</a></nav>
+</body>
+</html>
