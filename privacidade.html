@@ -14,6 +14,7 @@
       --texto: #111111;
       --texto-suave: #3a3a3c;
       --acento: #AF26C9;
+      --acento-suave: rgba(175, 38, 201, 0.08);
       --hairline: rgba(0, 0, 0, 0.12);
     }
     @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
         --texto: #f2f2f7;
         --texto-suave: #b9b9c0;
         --acento: #d36ae6;
+        --acento-suave: rgba(211, 106, 230, 0.14);
         --hairline: rgba(255, 255, 255, 0.16);
       }
     }
@@ -35,12 +37,31 @@
     }
     main { max-width: 640px; margin: 0 auto; }
     .idiomas {
-      color: var(--texto-suave);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
       font-size: 0.85rem;
-      margin-bottom: 24px;
     }
-    .idiomas a { color: var(--texto-suave); }
-    .idiomas strong { color: var(--acento); font-weight: 600; }
+    .idiomas a, .idiomas .ativo {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--hairline);
+      color: var(--texto-suave);
+      text-decoration: none;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    .idiomas a:hover { border-color: var(--acento); color: var(--acento); }
+    .idiomas .ativo {
+      border-color: var(--acento);
+      color: var(--acento);
+      background: var(--acento-suave);
+      font-weight: 600;
+    }
+    .idiomas .bandeira { font-size: 1rem; line-height: 1; }
     .eyebrow {
       color: var(--acento);
       font-size: 0.85rem;
@@ -81,7 +102,11 @@
 </head>
 <body>
   <main>
-    <p class="idiomas"><strong>Português</strong> · <a href="privacy.html">English</a> · <a href="privacidad.html">Español</a></p>
+    <nav class="idiomas" aria-label="Idiomas">
+      <span class="ativo"><span class="bandeira">🇧🇷</span> Português</span>
+      <a href="privacy.html" hreflang="en"><span class="bandeira">🇺🇸</span> English</a>
+      <a href="privacidad.html" hreflang="es"><span class="bandeira">🇪🇸</span> Español</a>
+    </nav>
 
     <p class="eyebrow">Meu Versículo</p>
     <h1>Política de Privacidade</h1>

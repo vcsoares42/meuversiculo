@@ -11,6 +11,7 @@
       --texto: #111111;
       --texto-suave: #3a3a3c;
       --acento: #AF26C9;
+      --acento-suave: rgba(175, 38, 201, 0.08);
       --hairline: rgba(0, 0, 0, 0.12);
     }
     @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
         --texto: #f2f2f7;
         --texto-suave: #b9b9c0;
         --acento: #d36ae6;
+        --acento-suave: rgba(211, 106, 230, 0.14);
         --hairline: rgba(255, 255, 255, 0.16);
       }
     }
@@ -52,8 +54,31 @@
       border-radius: 14px;
       margin-bottom: 40px;
     }
-    nav { color: var(--texto-suave); font-size: 0.9rem; }
-    nav a { color: var(--texto-suave); }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+    .rotulo {
+      width: 100%;
+      color: var(--texto-suave);
+      margin-bottom: 4px;
+    }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--hairline);
+      color: var(--texto-suave);
+      text-decoration: none;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+    nav a:hover { border-color: var(--acento); color: var(--acento); }
+    nav .bandeira { font-size: 1rem; line-height: 1; }
   </style>
 </head>
 <body>
@@ -62,6 +87,11 @@
   especialmente para você — com reflexões, orações e imagens para
   compartilhar.</p>
   <a class="botao" href="https://apps.apple.com/br/app/meu-vers%C3%ADculo/id1667175912" rel="noopener">Baixar na App Store</a>
-  <nav><a href="privacidade.html">Política de Privacidade</a> · <a href="privacy.html">Privacy Policy</a> · <a href="privacidad.html">Política de Privacidad</a></nav>
+  <nav aria-label="Política de privacidade">
+    <span class="rotulo">Política de Privacidade</span>
+    <a href="privacidade.html" hreflang="pt-BR"><span class="bandeira">🇧🇷</span> Português</a>
+    <a href="privacy.html" hreflang="en"><span class="bandeira">🇺🇸</span> English</a>
+    <a href="privacidad.html" hreflang="es"><span class="bandeira">🇪🇸</span> Español</a>
+  </nav>
 </body>
 </html>
