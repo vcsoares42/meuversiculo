@@ -116,7 +116,7 @@
 
     <p class="eyebrow">Meu Versículo</p>
     <h1>Politique de confidentialité</h1>
-    <p class="atualizacao">Dernière mise à jour : 29 septembre 2026</p>
+    <p class="atualizacao">Dernière mise à jour : 8 octobre 2026</p>
 
     <p>Chez <strong>Meu Versículo</strong>, nous respectons votre vie privée.
     Cette application a été conçue pour fonctionner sans inscription et sans
@@ -164,26 +164,42 @@
     lui aussi lié uniquement à l'identifiant aléatoire de l'appareil.</p>
 
     <h2>Mesure des publicités</h2>
-    <p>Nous faisons la promotion de Meu Versículo avec des publicités sur
-    l'App Store (Apple Ads) et sur Google. Pour savoir quelles campagnes
-    amènent des personnes vers l'application, et cesser de payer pour celles
-    qui ne fonctionnent pas, l'application envoie :</p>
+    <p>Nous faisons la promotion de Mon Verset avec des publicités sur l’App
+    Store (Apple Ads) et sur Google. Pour savoir quelles campagnes amènent des
+    personnes vers l’app, et arrêter de payer celles qui ne fonctionnent pas,
+    nous utilisons trois moyens&nbsp;:</p>
     <ul>
-      <li>à RevenueCat, un code d'attribution généré par iOS lui-même, qu'Apple
-      convertit en la campagne Apple Ads ayant mené à l'installation, le cas
-      échéant ;</li>
-      <li>à <strong>Google Analytics pour Firebase</strong>, les ouvertures de
-      l'application, des informations techniques sur l'appareil (modèle,
-      version du système, langue et pays approximatif) et le début d'un essai
-      gratuit ou d'un abonnement, avec le montant payé.</li>
+      <li><strong>Apple Ads, pour tout le monde&nbsp;:</strong> l’app envoie à
+      RevenueCat un jeton d’attribution généré par iOS lui-même, qu’Apple
+      convertit en la campagne Apple Ads à l’origine de l’installation, le cas
+      échéant. Cela ne vous identifie pas et ne nécessite aucune
+      autorisation.</li>
+      <li><strong>SKAdNetwork, pour tout le monde&nbsp;:</strong> iOS indique
+      lui-même aux régies publicitaires, de façon agrégée et anonyme, si une
+      campagne a généré des installations, des essais gratuits ou des
+      abonnements. Par ce moyen, aucune de vos données ne quitte l’appareil de
+      façon identifiable.</li>
+      <li><strong>Google, uniquement avec votre autorisation&nbsp;:</strong>
+      pendant la configuration initiale, l’iPhone vous demande si l’app peut
+      suivre votre activité. Si vous touchez «&nbsp;Autoriser&nbsp;», l’app envoie
+      à <strong>Google Analytics pour Firebase</strong> les ouvertures de
+      l’app, des informations techniques sur l’appareil (modèle, version du
+      système, langue et pays approximatif), l’identifiant publicitaire de
+      l’appareil (IDFA) et le début d’un essai gratuit ou d’un abonnement, avec
+      le montant payé. RevenueCat envoie aussi à Firebase le début de l’essai
+      gratuit et de l’abonnement. Google utilise ces données pour mesurer et
+      optimiser nos publicités, conformément aux <a href="https://policies.google.com/privacy" rel="noopener">règles de confidentialité de
+      Google</a>.</li>
     </ul>
-    <p>Dans Firebase, ces données sont liées à un identifiant d'installation
-    qu'il génère et ne comprennent ni votre nom, ni votre e-mail, ni vos
-    réponses à la configuration initiale. Nous ne collectons pas
-    l'identifiant publicitaire de l'appareil (IDFA) et ne demandons pas
-    d'autorisation de suivi. Google utilise ces données pour mesurer et
-    optimiser nos publicités, conformément aux <a href="https://policies.google.com/privacy" rel="noopener">règles de
-    confidentialité de Google</a>.</p>
+    <p>Si vous refusez, ou si l’option «&nbsp;Autoriser les demandes de
+    suivi&nbsp;» est désactivée dans Réglages, rien n’est envoyé à Google et
+    l’app fonctionne exactement de la même façon. Vous pouvez modifier ce choix
+    à tout moment dans Réglages &gt; Confidentialité et sécurité &gt;
+    Suivi.</p>
+    <p>Pendant la configuration initiale, nous vous demandons aussi comment
+    vous avez découvert l’app. Votre réponse reste dans les statistiques
+    d’utilisation anonymes et dans RevenueCat, et n’est pas envoyée à
+    Google.</p>
 
     <h2>Services que nous utilisons</h2>
     <p>Les données décrites ci-dessus sont traitées par ces services :</p>
@@ -192,7 +208,7 @@
       <li><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, pour le statut de l'abonnement et l'attribution
       des campagnes Apple ;</li>
       <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Analytics pour Firebase</a>, pour la mesure des
-      publicités.</li>
+      publicités, uniquement avec votre autorisation de suivi.</li>
     </ul>
     <p>PostHog et RevenueCat agissent pour notre compte et n'utilisent les
     données à aucune autre fin. Nous ne vendons aucune donnée à des tiers, et
