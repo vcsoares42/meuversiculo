@@ -116,7 +116,7 @@
 
     <p class="eyebrow">Meu Versículo</p>
     <h1>Informativa sulla privacy</h1>
-    <p class="atualizacao">Ultimo aggiornamento: 29 settembre 2026</p>
+    <p class="atualizacao">Ultimo aggiornamento: 8 ottobre 2026</p>
 
     <p>In <strong>Meu Versículo</strong> teniamo alla tua privacy. Questa app
     è stata creata per funzionare senza registrazione e senza identificare chi
@@ -163,25 +163,37 @@
     all'identificatore casuale del dispositivo.</p>
 
     <h2>Misurazione degli annunci</h2>
-    <p>Promuoviamo Meu Versículo con annunci sull'App Store (Apple Ads) e su
-    Google. Per sapere quali campagne portano persone all'app, e smettere di
-    pagare per quelle che non funzionano, l'app invia:</p>
+    <p>Promuoviamo Mio Versetto con annunci sull’App Store (Apple Ads) e su
+    Google. Per capire quali campagne portano persone all’app, e smettere di
+    pagare quelle che non funzionano, usiamo tre canali:</p>
     <ul>
-      <li>a RevenueCat, un codice di attribuzione generato da iOS stesso, che
-      Apple converte nella campagna Apple Ads che ha portato all'installazione,
-      se presente;</li>
-      <li>a <strong>Google Analytics per Firebase</strong>, le aperture
-      dell'app, informazioni tecniche sul dispositivo (modello, versione del
-      sistema, lingua e paese approssimativo) e l'avvio di un periodo di prova
-      gratuito o di un abbonamento, con l'importo pagato.</li>
+      <li><strong>Apple Ads, per tutti:</strong> l’app invia a RevenueCat un
+      codice di attribuzione generato da iOS stesso, che Apple converte nella
+      campagna Apple Ads che ha portato all’installazione, se presente. Questo
+      non ti identifica e non richiede alcun permesso.</li>
+      <li><strong>SKAdNetwork, per tutti:</strong> è iOS stesso a comunicare
+      alle reti pubblicitarie, in forma aggregata e anonima, se una campagna ha
+      generato installazioni, prove gratuite o abbonamenti. Attraverso questo
+      canale nessun tuo dato lascia il dispositivo in forma identificabile.</li>
+      <li><strong>Google, solo con il tuo permesso:</strong> durante la
+      configurazione iniziale, l’iPhone ti chiede se l’app può tracciare la tua
+      attività. Se tocchi “Consenti”, l’app invia a <strong>Google Analytics
+      per Firebase</strong> le aperture dell’app, informazioni tecniche sul
+      dispositivo (modello, versione del sistema, lingua e paese approssimativo),
+      l’identificatore pubblicitario del dispositivo (IDFA) e l’inizio di una
+      prova gratuita o di un abbonamento, con l’importo pagato. Anche
+      RevenueCat invia a Firebase l’inizio della prova gratuita e
+      dell’abbonamento. Google usa questi dati per misurare e ottimizzare i
+      nostri annunci, secondo le <a href="https://policies.google.com/privacy" rel="noopener">norme sulla privacy di Google</a>.</li>
     </ul>
-    <p>In Firebase, questi dati sono collegati a un identificatore di
-    installazione generato da Firebase e non includono nome, e-mail né le
-    risposte della configurazione iniziale. Non raccogliamo l'identificatore
-    pubblicitario del dispositivo (IDFA) e non chiediamo il permesso di
-    tracciamento. Google usa questi dati per misurare e ottimizzare i nostri
-    annunci, secondo le <a href="https://policies.google.com/privacy" rel="noopener">norme sulla privacy di
-    Google</a>.</p>
+    <p>Se rifiuti, o se l’opzione “Consenti alle app di richiedere il
+    tracciamento” è disattivata in Impostazioni, a Google non viene inviato
+    nulla e l’app funziona esattamente allo stesso modo. Puoi cambiare questa
+    scelta in qualsiasi momento in Impostazioni &gt; Privacy e sicurezza &gt;
+    Tracciamento.</p>
+    <p>Durante la configurazione iniziale ti chiediamo anche come hai
+    conosciuto l’app. La risposta resta nelle statistiche di utilizzo anonime e
+    in RevenueCat, e non viene inviata a Google.</p>
 
     <h2>Servizi che utilizziamo</h2>
     <p>I dati descritti sopra vengono elaborati da questi servizi:</p>
@@ -190,7 +202,7 @@
       <li><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, per lo stato dell'abbonamento e l'attribuzione
       delle campagne Apple;</li>
       <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Analytics per Firebase</a>, per la misurazione
-      degli annunci.</li>
+      degli annunci, solo con il tuo consenso al tracciamento.</li>
     </ul>
     <p>PostHog e RevenueCat agiscono per nostro conto e non usano i dati per
     nessun altro scopo. Non vendiamo alcun dato a terzi, e nessun dato viene

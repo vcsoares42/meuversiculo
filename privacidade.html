@@ -116,7 +116,7 @@
 
     <p class="eyebrow">Meu Versículo</p>
     <h1>Política de Privacidade</h1>
-    <p class="atualizacao">Última atualização: 29 de setembro de 2026</p>
+    <p class="atualizacao">Última atualização: 8 de outubro de 2026</p>
 
     <p>Nós, do <strong>Meu Versículo</strong>, valorizamos a sua privacidade. Este
     aplicativo foi construído para funcionar sem cadastro e sem identificar
@@ -160,22 +160,34 @@
     <h2>Medição de anúncios</h2>
     <p>Divulgamos o Meu Versículo com anúncios na App Store (Apple Ads) e no
     Google. Para saber quais campanhas trazem pessoas ao app, e parar de pagar
-    pelas que não funcionam, o app envia:</p>
+    pelas que não funcionam, usamos três caminhos:</p>
     <ul>
-      <li>ao RevenueCat, um código de atribuição gerado pelo próprio iOS, que a
-      Apple converte na campanha do Apple Ads que levou à instalação, se
-      houver;</li>
-      <li>ao <strong>Google Analytics para Firebase</strong>, as aberturas do
-      app, informações técnicas do aparelho (modelo, versão do sistema, idioma
-      e país aproximado) e o início de um período grátis ou de uma assinatura,
-      com o valor pago.</li>
+      <li><strong>Apple Ads, para todos:</strong> o app envia ao RevenueCat um
+      código de atribuição gerado pelo próprio iOS, que a Apple converte na
+      campanha do Apple Ads que levou à instalação, se houver. Isso não
+      identifica você e não depende de permissão.</li>
+      <li><strong>SKAdNetwork, para todos:</strong> o próprio iOS informa às
+      redes de anúncios, de forma agregada e anônima, se uma campanha gerou
+      instalações, períodos grátis ou assinaturas. Por esse caminho nenhum dado
+      seu sai do aparelho de forma identificável.</li>
+      <li><strong>Google, só com a sua permissão:</strong> durante a
+      configuração inicial, o iPhone pergunta se o app pode rastrear sua
+      atividade. Se você tocar em “Permitir”, o app envia ao
+      <strong>Google Analytics para Firebase</strong> as aberturas do app,
+      informações técnicas do aparelho (modelo, versão do sistema, idioma e
+      país aproximado), o identificador de publicidade do aparelho (IDFA) e o
+      início de um período grátis ou de uma assinatura, com o valor pago. O
+      RevenueCat também envia ao Firebase o início do período grátis e da
+      assinatura. O Google usa esses dados para medir e otimizar os nossos
+      anúncios, conforme a <a href="https://policies.google.com/privacy" rel="noopener">política de privacidade do Google</a>.</li>
     </ul>
-    <p>No Firebase, esses dados ficam ligados a um identificador de instalação
-    gerado por ele e não incluem nome, e-mail nem as respostas da configuração
-    inicial. Não coletamos o identificador de publicidade do aparelho (IDFA) e
-    não pedimos permissão de rastreamento. O Google usa esses dados para medir
-    e otimizar os nossos anúncios, conforme a <a href="https://policies.google.com/privacy" rel="noopener">política de
-    privacidade do Google</a>.</p>
+    <p>Se você recusar, ou se a opção “Permitir que apps peçam para rastrear”
+    estiver desligada nos Ajustes, nada é enviado ao Google e o app funciona
+    exatamente da mesma forma. Você pode mudar essa escolha a qualquer momento
+    em Ajustes &gt; Privacidade e Segurança &gt; Rastreamento.</p>
+    <p>Na configuração inicial também perguntamos como você conheceu o app. A
+    resposta fica nas estatísticas de uso anônimas e no RevenueCat, e não é
+    enviada ao Google.</p>
 
     <h2>Serviços que usamos</h2>
     <p>Os dados descritos acima são processados por estes serviços:</p>
@@ -184,7 +196,7 @@
       <li><a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, para o status das assinaturas e a atribuição das
       campanhas da Apple;</li>
       <li><a href="https://firebase.google.com/support/privacy" rel="noopener">Google Analytics para Firebase</a>, para a medição de
-      anúncios.</li>
+      anúncios, só com a sua permissão de rastreamento.</li>
     </ul>
     <p>O PostHog e o RevenueCat atuam em nosso nome e não usam os dados para
     outros fins. Não vendemos dado algum a terceiros, e nenhum dado é usado
